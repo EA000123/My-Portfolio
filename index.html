@@ -11,7 +11,7 @@
   <!-- QR Code Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
     body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
@@ -20,7 +20,6 @@
   <!-- Navigation -->
   <nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50">
     <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <!-- 1. Top Left Changed to EA. -->
       <a href="#" class="text-xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent tracking-wider">EA.</a>
       <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
@@ -61,36 +60,43 @@
     </div>
   </section>
 
-  <!-- 4. Active Enterprise Clients Section with Logos -->
+  <!-- Active Enterprise Clients Section with Reliable Branded Logos -->
   <section id="clients" class="py-12 bg-slate-900 border-y border-slate-800 px-4">
     <div class="max-w-6xl mx-auto">
       <p class="text-xs font-bold text-cyan-400 uppercase tracking-widest text-center mb-8">Currently Executing Projects With</p>
       
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-items-center">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+        
         <!-- HL Mando -->
-        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
-          <img src="https://logo.clearbit.com/hlmando.com" alt="HL Mando Logo" class="max-h-10 max-w-[120px] object-contain filter grayscale contrast-200 brightness-200 group-hover:grayscale-0 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>HL MANDO</span>';">
+        <div class="bg-slate-800/90 p-4 rounded-xl border border-slate-700/80 flex items-center justify-center gap-3 hover:border-cyan-500/50 transition">
+          <i class="fa-solid fa-car-side text-cyan-400 text-xl"></i>
+          <span class="text-sm font-black text-white tracking-wider">HL MANDO</span>
         </div>
 
         <!-- Ashok Leyland -->
-        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
-          <img src="https://logo.clearbit.com/ashokleyland.com" alt="Ashok Leyland Logo" class="max-h-12 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>ASHOK LEYLAND</span>';">
+        <div class="bg-slate-800/90 p-4 rounded-xl border border-slate-700/80 flex items-center justify-center gap-3 hover:border-cyan-500/50 transition">
+          <i class="fa-solid fa-truck-front text-cyan-400 text-xl"></i>
+          <span class="text-sm font-black text-white tracking-wider uppercase">Ashok Leyland</span>
         </div>
 
         <!-- Gloster Cables -->
-        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
-          <img src="https://www.glostercable.com/images/logo.png" alt="Gloster Cables Logo" class="max-h-10 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>GLOSTER CABLES</span>';">
+        <div class="bg-slate-800/90 p-4 rounded-xl border border-slate-700/80 flex items-center justify-center gap-3 hover:border-cyan-500/50 transition">
+          <i class="fa-solid fa-bolt text-cyan-400 text-xl"></i>
+          <span class="text-sm font-black text-white tracking-wider uppercase">Gloster Cables</span>
         </div>
 
         <!-- Ruby Mills -->
-        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
-          <img src="https://logo.clearbit.com/rubymills.com" alt="Ruby Mills Logo" class="max-h-10 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>RUBY MILLS</span>';">
+        <div class="bg-slate-800/90 p-4 rounded-xl border border-slate-700/80 flex items-center justify-center gap-3 hover:border-cyan-500/50 transition">
+          <i class="fa-solid fa-industry text-cyan-400 text-xl"></i>
+          <span class="text-sm font-black text-white tracking-wider uppercase">Ruby Mills</span>
         </div>
 
         <!-- Venus Wires -->
-        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group col-span-2 md:col-span-1">
-          <img src="https://logo.clearbit.com/venuswires.com" alt="Venus Wires Logo" class="max-h-10 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>VENUS WIRES</span>';">
+        <div class="bg-slate-800/90 p-4 rounded-xl border border-slate-700/80 flex items-center justify-center gap-3 hover:border-cyan-500/50 transition col-span-2 md:col-span-1">
+          <i class="fa-solid fa-network-wired text-cyan-400 text-xl"></i>
+          <span class="text-sm font-black text-white tracking-wider uppercase">Venus Wires</span>
         </div>
+
       </div>
     </div>
   </section>
@@ -122,14 +128,14 @@
     </div>
   </section>
 
-  <!-- Complete Career Journey Timeline -->
+  <!-- Career Experience Timeline -->
   <section id="experience" class="py-16 bg-slate-900/40 border-t border-slate-800 px-4">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6 flex items-center gap-3">
         <i class="fa-solid fa-briefcase text-cyan-400"></i> Professional Experience
       </h2>
 
-      <!-- 3. Relocated International Assignments Highlight Banner -->
+      <!-- Relocated International Assignments Highlight -->
       <div class="mb-10 bg-slate-900 p-6 rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-950/20 to-slate-900 flex flex-col md:flex-row items-center gap-5">
         <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl shrink-0 border border-amber-500/40">
           <i class="fa-solid fa-plane-departure"></i>
@@ -157,7 +163,7 @@
           </ul>
         </div>
 
-        <!-- Role 2 (China Highlight) -->
+        <!-- Role 2 -->
         <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h3 class="text-lg font-bold text-white">Senior Application Engineer | Assistant Manager</h3>
@@ -182,7 +188,7 @@
           </ul>
         </div>
 
-        <!-- Role 4 (Israel Highlight) -->
+        <!-- Role 4 -->
         <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h3 class="text-lg font-bold text-white">Senior Project Engineer (Technical Consultant)</h3>
