@@ -20,7 +20,8 @@
   <!-- Navigation -->
   <nav class="fixed top-0 w-full bg-slate-900/90 backdrop-blur border-b border-slate-800 z-50">
     <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="#" class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">ER.</a>
+      <!-- 1. Top Left Changed to EA. -->
+      <a href="#" class="text-xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent tracking-wider">EA.</a>
       <div class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
         <a href="#clients" class="hover:text-cyan-400 transition">Active Clients</a>
@@ -39,17 +40,14 @@
         <img src="3734.jpg" alt="Elayarasan Ramalingam" class="w-full h-full object-cover rounded-xl">
       </div>
       <div class="flex-1 space-y-5">
-        <div class="inline-flex items-center gap-2 px-3 py-1 bg-cyan-950 border border-cyan-800 rounded-full text-cyan-400 text-xs font-semibold uppercase tracking-wider">
-          <i class="fa-solid fa-globe"></i> International Experience (China & Israel)
-        </div>
         <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-          Elayarasan <span class="text-cyan-400">Ramalingam</span>[cite: 1]
+          Elayarasan <span class="text-cyan-400">Ramalingam</span>
         </h1>
         <p class="text-lg md:text-xl font-semibold text-slate-300">
-          Senior IoT Solutions Architect | Control Systems & Technology Leader[cite: 1]
+          Senior IoT Solutions Architect | Control Systems & Technology Leader
         </p>
         <p class="text-slate-400 text-sm md:text-base leading-relaxed">
-          11+ years bridging industrial OT infrastructure with enterprise cloud data pipelines (AWS IoT Core, MQTT)[cite: 1]. Specialist in multi-vendor PLC systems including <strong>Beckhoff TwinCAT</strong> and <strong>Mitsubishi PLCs</strong>[cite: 1]. 
+          11+ years bridging industrial OT infrastructure with enterprise cloud data pipelines (AWS IoT Core, MQTT). Specialist in multi-vendor PLC systems including <strong>Beckhoff TwinCAT</strong> and <strong>Mitsubishi PLCs</strong>.
         </p>
         <div class="flex flex-wrap gap-3 pt-2">
           <a href="mailto:elayarasanram90@gmail.com" class="px-5 py-2.5 bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm rounded-lg transition flex items-center gap-2">
@@ -63,42 +61,62 @@
     </div>
   </section>
 
-  <!-- Active Engagements Banner -->
-  <section id="clients" class="py-10 bg-slate-900 border-y border-slate-800 px-4">
+  <!-- 4. Active Enterprise Clients Section with Logos -->
+  <section id="clients" class="py-12 bg-slate-900 border-y border-slate-800 px-4">
     <div class="max-w-6xl mx-auto">
-      <p class="text-xs font-bold text-cyan-400 uppercase tracking-widest text-center mb-6">Currently Executing Projects With</p>
-      <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
-        <span class="px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-sm font-semibold text-slate-200">HL Mando</span>
-        <span class="px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-sm font-semibold text-slate-200">Ashok Leyland</span>
-        <span class="px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-sm font-semibold text-slate-200">Gloster Cables</span>
-        <span class="px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-sm font-semibold text-slate-200">Ruby Mills</span>
-        <span class="px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-sm font-semibold text-slate-200">Venus Wires</span>
+      <p class="text-xs font-bold text-cyan-400 uppercase tracking-widest text-center mb-8">Currently Executing Projects With</p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-items-center">
+        <!-- HL Mando -->
+        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
+          <img src="https://logo.clearbit.com/hlmando.com" alt="HL Mando Logo" class="max-h-10 max-w-[120px] object-contain filter grayscale contrast-200 brightness-200 group-hover:grayscale-0 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>HL MANDO</span>';">
+        </div>
+
+        <!-- Ashok Leyland -->
+        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
+          <img src="https://logo.clearbit.com/ashokleyland.com" alt="Ashok Leyland Logo" class="max-h-12 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>ASHOK LEYLAND</span>';">
+        </div>
+
+        <!-- Gloster Cables -->
+        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
+          <img src="https://www.glostercable.com/images/logo.png" alt="Gloster Cables Logo" class="max-h-10 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>GLOSTER CABLES</span>';">
+        </div>
+
+        <!-- Ruby Mills -->
+        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group">
+          <img src="https://logo.clearbit.com/rubymills.com" alt="Ruby Mills Logo" class="max-h-10 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>RUBY MILLS</span>';">
+        </div>
+
+        <!-- Venus Wires -->
+        <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/60 w-full h-20 flex items-center justify-center hover:border-cyan-500/50 transition group col-span-2 md:col-span-1">
+          <img src="https://logo.clearbit.com/venuswires.com" alt="Venus Wires Logo" class="max-h-10 max-w-[120px] object-contain filter brightness-200 group-hover:brightness-100 transition" onError="this.onerror=null; this.remove(); this.parentNode.innerHTML='<span class=\'text-sm font-bold text-slate-200\'>VENUS WIRES</span>';">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills & Core Competencies -->
+  <!-- Skills Matrix -->
   <section id="skills" class="py-16 px-4 max-w-6xl mx-auto">
     <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-8 flex items-center gap-3">
-      <i class="fa-solid fa-microchip text-cyan-400"></i> Technical Expertise & PLC Specialization[cite: 1]
+      <i class="fa-solid fa-microchip text-cyan-400"></i> Technical Expertise & PLC Specialization
     </h2>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition">
         <h3 class="text-base font-bold text-cyan-400 mb-2"><i class="fa-solid fa-server me-2"></i>Beckhoff & Mitsubishi PLCs</h3>
         <p class="text-slate-300 text-sm leading-relaxed">
-          Deep mastery in <strong>Beckhoff TwinCAT 2/3</strong> (CX/CP series, embedded PCs) and <strong>Mitsubishi</strong> (FX/Q/L-series, GX Works3, Q/FX-CPU multi-network architectures)[cite: 1].
+          Deep mastery in <strong>Beckhoff TwinCAT 2/3</strong> (CX/CP series, embedded PCs) and <strong>Mitsubishi</strong> (FX/Q/L-series, GX Works3, Q/FX-CPU multi-network architectures).
         </p>
       </div>
       <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition">
         <h3 class="text-base font-bold text-cyan-400 mb-2"><i class="fa-solid fa-cloud me-2"></i>IoT & Industry 4.0</h3>
         <p class="text-slate-300 text-sm leading-relaxed">
-          AWS IoT Core (MQTT), LoRaWAN (ChirpStack, IN865), Node-RED, Edge Gateways (PUSR USR-M300, BLIIoT BL190), telemetry logging, legacy migration[cite: 1].
+          AWS IoT Core (MQTT), LoRaWAN (ChirpStack, IN865), Node-RED, Edge Gateways (PUSR USR-M300, BLIIoT BL190), telemetry logging, legacy migration.
         </p>
       </div>
       <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800 hover:border-cyan-500/50 transition">
         <h3 class="text-base font-bold text-cyan-400 mb-2"><i class="fa-solid fa-network-wired me-2"></i>Protocols & Motion</h3>
         <p class="text-slate-300 text-sm leading-relaxed">
-          Modbus RTU/TCP, Profinet, Profibus, EtherCAT, EtherNet/IP, CC-Link, CAN Open, Fanuc FOCAS CNC Integration, multi-axis servo sync[cite: 1].
+          Modbus RTU/TCP, Profinet, Profibus, EtherCAT, EtherNet/IP, CC-Link, CAN Open, Fanuc FOCAS CNC Integration, multi-axis servo sync.
         </p>
       </div>
     </div>
@@ -107,9 +125,22 @@
   <!-- Complete Career Journey Timeline -->
   <section id="experience" class="py-16 bg-slate-900/40 border-t border-slate-800 px-4">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-10 flex items-center gap-3">
-        <i class="fa-solid fa-briefcase text-cyan-400"></i> Career History & Key International Projects[cite: 1]
+      <h2 class="text-2xl md:text-3xl font-bold text-slate-100 mb-6 flex items-center gap-3">
+        <i class="fa-solid fa-briefcase text-cyan-400"></i> Professional Experience
       </h2>
+
+      <!-- 3. Relocated International Assignments Highlight Banner -->
+      <div class="mb-10 bg-slate-900 p-6 rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-950/20 to-slate-900 flex flex-col md:flex-row items-center gap-5">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl shrink-0 border border-amber-500/40">
+          <i class="fa-solid fa-plane-departure"></i>
+        </div>
+        <div>
+          <h3 class="text-base font-bold text-amber-300">Global Engineering Assignments</h3>
+          <p class="text-slate-300 text-sm mt-1 leading-relaxed">
+            Hands-on international project execution, including <strong>Suzhou HQ (China)</strong> for advanced industrial hardware architecture knowledge transfer, and <strong>Shafir Production System (Israel)</strong> for commissioning full end-of-line Yaskawa robotic packing/palletizing lines.
+          </p>
+        </div>
+      </div>
 
       <div class="space-y-6">
 
@@ -117,29 +148,26 @@
         <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h3 class="text-lg font-bold text-white">Senior IoT Solutions Architect</h3>
-            <span class="text-xs text-cyan-400 font-semibold">Oct 2025 - Present | Elogic Engineering Services (eLT Edge), Hyderabad[cite: 1]</span>
+            <span class="text-xs text-cyan-400 font-semibold">Oct 2025 - Present | Elogic Engineering Services (eLT Edge), Hyderabad</span>
           </div>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li>Architecting edge-to-cloud pipelines connecting heterogeneous field devices to AWS IoT Core via MQTT[cite: 1].</li>
-            <li>Configuring PUSR USR-M300 & BLIIoT edge gateways for Mitsubishi FX5U, Siemens S7-1200/1500, ABB, Schneider, and Delta PLCs[cite: 1].</li>
-            <li>Interfacing process controllers, energy meters, and Fanuc FOCAS CNC systems[cite: 1].</li>
+            <li>Architecting edge-to-cloud pipelines connecting heterogeneous field devices to AWS IoT Core via MQTT.</li>
+            <li>Configuring PUSR USR-M300 & BLIIoT edge gateways for Mitsubishi FX5U, Siemens S7-1200/1500, ABB, Schneider, and Delta PLCs.</li>
+            <li>Interfacing process controllers, energy meters, and Fanuc FOCAS CNC systems.</li>
           </ul>
         </div>
 
         <!-- Role 2 (China Highlight) -->
-        <div class="bg-slate-900 p-6 rounded-xl border border-cyan-500/40 bg-gradient-to-r from-slate-900 to-slate-900/90">
+        <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-              Senior Application Engineer | Assistant Manager 
-              <span class="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs border border-amber-500/30 rounded">China HQ Highlight</span>
-            </h3>
-            <span class="text-xs text-cyan-400 font-semibold">Mar 2025 - Oct 2025 | Lingchen Tech / Suzhou Lingchen Co., Ltd[cite: 1]</span>
+            <h3 class="text-lg font-bold text-white">Senior Application Engineer | Assistant Manager</h3>
+            <span class="text-xs text-cyan-400 font-semibold">Mar 2025 - Oct 2025 | Lingchen Tech / Suzhou Lingchen Co., Ltd</span>
           </div>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li><strong>International Knowledge Transfer:</strong> Completed intensive hardware/architecture training at Suzhou HQ (China) and led localized programs for Indian manufacturing[cite: 1].</li>
-            <li>Engineered custom high-temperature variants (>45°C) and network cards securing OEM purchase orders[cite: 1].</li>
-            <li>Technical support for Lingchen IPC on Salcomp's Langkun Machine project and replacement handovers at Motherson[cite: 1].</li>
-            <li>Engagements with Tier-1 clients including ASM Technologies, Indo MIM, Avantra Automation, and NEST Company[cite: 1].</li>
+            <li>Completed hardware & architecture knowledge transfer at Suzhou HQ (China) and led localized programs for Indian manufacturing.</li>
+            <li>Engineered custom high-temperature variants (>45°C) and network cards securing OEM purchase orders.</li>
+            <li>Technical support for Lingchen IPC on Salcomp's Langkun Machine project and replacement handovers at Motherson.</li>
+            <li>Engagements with Tier-1 clients including ASM Technologies, Indo MIM, Avantra Automation, and NEST Company.</li>
           </ul>
         </div>
 
@@ -147,25 +175,22 @@
         <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h3 class="text-lg font-bold text-white">Senior Project Engineer</h3>
-            <span class="text-xs text-cyan-400 font-semibold">Feb 2022 - Feb 2025 | Gyptechin Engineering, Cuddalore[cite: 1]</span>
+            <span class="text-xs text-cyan-400 font-semibold">Feb 2022 - Feb 2025 | Gyptechin Engineering, Cuddalore</span>
           </div>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li>Led full software design, TwinCAT/PLC programming, FAT testing, and multi-vendor commissioning for gypsum-board production lines[cite: 1].</li>
+            <li>Led full software design, TwinCAT/PLC programming, FAT testing, and multi-vendor commissioning for gypsum-board production lines.</li>
           </ul>
         </div>
 
         <!-- Role 4 (Israel Highlight) -->
-        <div class="bg-slate-900 p-6 rounded-xl border border-cyan-500/40">
+        <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-            <h3 class="text-lg font-bold text-white flex items-center gap-2">
-              Senior Project Engineer (Technical Consultant)
-              <span class="px-2 py-0.5 bg-amber-500/20 text-amber-400 text-xs border border-amber-500/30 rounded">Israel Project Highlight</span>
-            </h3>
-            <span class="text-xs text-cyan-400 font-semibold">Mar 2020 - Jan 2022 | 369Trokut Automation, Coimbatore[cite: 1]</span>
+            <h3 class="text-lg font-bold text-white">Senior Project Engineer (Technical Consultant)</h3>
+            <span class="text-xs text-cyan-400 font-semibold">Mar 2020 - Jan 2022 | 369Trokut Automation, Coimbatore</span>
           </div>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li><strong>End-of-Line Robotics (Israel):</strong> Engineered Yaskawa robotic/gantry systems for inspection, marking, packing, and palletizing lines at Shafir Production System (Israel)[cite: 1].</li>
-            <li>Architected Beckhoff IPC integration with ABB robotics, spiral conveyors, and SEW infrastructure at Schreiber Dynamix Dairies[cite: 1].</li>
+            <li>Engineered Yaskawa robotic/gantry systems for inspection, marking, packing, and palletizing lines at Shafir Production System (Israel).</li>
+            <li>Architected Beckhoff IPC integration with ABB robotics, spiral conveyors, and SEW infrastructure at Schreiber Dynamix Dairies.</li>
           </ul>
         </div>
 
@@ -173,12 +198,12 @@
         <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h3 class="text-lg font-bold text-white">Project Engineer (Technical Consultant)</h3>
-            <span class="text-xs text-cyan-400 font-semibold">Feb 2017 - Jan 2020 | Tirvu India, Coimbatore[cite: 1]</span>
+            <span class="text-xs text-cyan-400 font-semibold">Feb 2017 - Jan 2020 | Tirvu India, Coimbatore</span>
           </div>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li>Architected 500-Ton press control systems with Allen-Bradley 5069 PLCs and RFID authorization for Praveen Engineering, Cataler India, and Ommi Forge[cite: 1].</li>
-            <li>Programmed specialized wiring machines using Beckhoff CP6706 embedded PCs and TwinCAT 3 visualization for Yazaki India[cite: 1].</li>
-            <li>Designed multi-axis packing line sync using Beckhoff CX5121 via CAN Open with Schneider servo drives[cite: 1].</li>
+            <li>Architected 500-Ton press control systems with Allen-Bradley 5069 PLCs and RFID authorization for Praveen Engineering, Cataler India, and Ommi Forge.</li>
+            <li>Programmed specialized wiring machines using Beckhoff CP6706 embedded PCs and TwinCAT 3 visualization for Yazaki India.</li>
+            <li>Designed multi-axis packing line sync using Beckhoff CX5121 via CAN Open with Schneider servo drives.</li>
           </ul>
         </div>
 
@@ -186,11 +211,11 @@
         <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h3 class="text-lg font-bold text-white">Project Engineer</h3>
-            <span class="text-xs text-cyan-400 font-semibold">2015 - 2017 | Kanitech Solutions, Bengaluru[cite: 1]</span>
+            <span class="text-xs text-cyan-400 font-semibold">2015 - 2017 | Kanitech Solutions, Bengaluru</span>
           </div>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li>Developed Wi-Fi multi-CPU networks (Mitsubishi Q-CPU & FX-CPU) for AGVs with RFID readers at Toyota Kirloskar Motor[cite: 1].</li>
-            <li>Integrated Mitsubishi L02P & FX-3U CPUs with load cells and SD card logging at Strides Pvt Ltd and OTIS Elevator[cite: 1].</li>
+            <li>Developed Wi-Fi multi-CPU networks (Mitsubishi Q-CPU & FX-CPU) for AGVs with RFID readers at Toyota Kirloskar Motor.</li>
+            <li>Integrated Mitsubishi L02P & FX-3U CPUs with load cells and SD card logging at Strides Pvt Ltd and OTIS Elevator.</li>
           </ul>
         </div>
 
@@ -198,10 +223,10 @@
         <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
           <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
             <h3 class="text-lg font-bold text-white">Application Engineer</h3>
-            <span class="text-xs text-cyan-400 font-semibold">Sep 2014 - Jul 2015 | Vamtec Machines & Automation, Chennai[cite: 1]</span>
+            <span class="text-xs text-cyan-400 font-semibold">Sep 2014 - Jul 2015 | Vamtec Machines & Automation, Chennai</span>
           </div>
           <ul class="text-sm text-slate-300 space-y-1 list-disc list-inside">
-            <li>Programmed a 14-station automotive assembly line using Beckhoff embedded controllers, AX-5000 servos, Atlas Copco nut runners via TCP/IP, and RFID sensors[cite: 1].</li>
+            <li>Programmed a 14-station automotive assembly line using Beckhoff embedded controllers, AX-5000 servos, Atlas Copco nut runners via TCP/IP, and RFID sensors.</li>
           </ul>
         </div>
 
@@ -229,21 +254,21 @@
             <i class="fa-solid fa-envelope text-cyan-400 text-xl me-4"></i>
             <div>
               <div class="text-xs text-slate-400">Email Address</div>
-              <div class="text-slate-200 font-semibold text-sm">elayarasanram90@gmail.com[cite: 1]</div>
+              <div class="text-slate-200 font-semibold text-sm">elayarasanram90@gmail.com</div>
             </div>
           </a>
           <a href="tel:+916379916120" class="flex items-center p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-cyan-500/50 transition">
             <i class="fa-solid fa-phone text-cyan-400 text-xl me-4"></i>
             <div>
               <div class="text-xs text-slate-400">Phone / WhatsApp</div>
-              <div class="text-slate-200 font-semibold text-sm">+91 6379916120[cite: 1]</div>
+              <div class="text-slate-200 font-semibold text-sm">+91 6379916120</div>
             </div>
           </a>
           <div class="flex items-center p-4 bg-slate-900 border border-slate-800 rounded-xl">
             <i class="fa-solid fa-location-dot text-cyan-400 text-xl me-4"></i>
             <div>
               <div class="text-xs text-slate-400">Location</div>
-              <div class="text-slate-200 font-semibold text-sm">Hyderabad, India[cite: 1]</div>
+              <div class="text-slate-200 font-semibold text-sm">Hyderabad, India</div>
             </div>
           </div>
         </div>
