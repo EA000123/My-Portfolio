@@ -18,8 +18,13 @@ convert_one() {
 
   echo "  → $src"
 
+  # Strip the first-line H1 from markdown so pandoc's title block doesn't duplicate it
+  # (title still goes to <title> tag and <h1 class="title"> at top of body)
+  local tmp=/tmp/${base}_nohead.md
+  sed '1{/^# /d;}' "$src" > "$tmp"
+
   # HTML with CSS embedded (works regardless of serve path)
-  pandoc "$src" \
+  pandoc "$tmp" \
     --from=gfm --to=html5 --standalone \
     --metadata=title:"$title" \
     --metadata=lang:en \
@@ -27,13 +32,15 @@ convert_one() {
     -o "$out_dir/${base}.html"
 
   # PDF via pandoc + weasyprint (one-shot — pandoc orchestrates)
-  pandoc "$src" \
+  pandoc "$tmp" \
     --from=gfm --to=html5 \
     --metadata=title:"$title" \
     --metadata=lang:en \
     --css=assets/style.css \
     --pdf-engine=weasyprint \
     -o "$out_dir/${base}.pdf"
+
+  rm -f "$tmp"
 }
 
 echo "== Resume =="
