@@ -21,11 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Pandoc + WeasyPrint
+      - name: Install Pandoc + WeasyPrint (via apt — stable)
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc python3-pip libpango-1.0-0 libpangoft2-1.0-0
-          pip install --break-system-packages weasyprint
+          sudo apt-get install -y pandoc weasyprint fonts-dejavu
 
       - name: Build site (HTML + PDF for every markdown)
         run: bash scripts/build.sh
