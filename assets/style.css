@@ -10,9 +10,9 @@
   --muted: #556677;
   --line: #e6ebf2;
   --paper: #ffffff;
-  --brand: #1A237E;      /* Krishna blue — deep indigo */
-  --brand-2: #283593;    /* Krishna blue — slightly lighter */
-  --accent: #1A237E;     /* same Krishna blue for consistency */
+  --brand: #1565C0;      /* Krishna peacock blue — bright royal */
+  --brand-2: #1976D2;    /* slightly brighter peacock blue */
+  --accent: #1565C0;     /* same peacock blue for consistency */
   --accent-2: #e56b1f;   /* kept warm orange for callouts/blockquotes */
   --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
