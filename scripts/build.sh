@@ -40,6 +40,13 @@ convert_one() {
     --pdf-engine=weasyprint \
     -o "$out_dir/${base}.pdf"
 
+  # DOCX (Microsoft Word) — editable, uploadable to Naukri's resume-upload form
+  pandoc "$tmp" \
+    --from=gfm --to=docx \
+    --metadata=title:"$title" \
+    --metadata=lang:en \
+    -o "$out_dir/${base}.docx"
+
   rm -f "$tmp"
 }
 
@@ -70,4 +77,4 @@ fi
 
 echo
 echo "Site built in $SITE/ — contents:"
-find "$SITE" -maxdepth 2 -type f | sort
+find "$SITE" -maxdepth 2 -type f \( -name '*.html' -o -name '*.pdf' -o -name '*.docx' \) | sort
