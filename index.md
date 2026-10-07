@@ -4,7 +4,8 @@
 
 📍 Hyderabad, India · 📞 +91 6379916120 · ✉ [elayarasanram90@gmail.com](mailto:elayarasanram90@gmail.com) · 💻 [github.com/EA000123](https://github.com/EA000123)
 
-**[⬇ Download PDF](resume/resume.pdf)** · **[Full resume (HTML)](resume/resume.html)** · **[Project case studies](#signature-projects)** · **[Work log](worklog/2026-10-07-hypergrid-v7-snapshot.html)**
+**📥 Download resume:** **[Word (.docx)](resume/resume.docx)** · **[PDF](resume/resume.pdf)** · **[HTML](resume/resume.html)**
+**🔗 Browse:** **[Project case studies](#signature-projects)** · **[Work log](worklog/2026-10-07-hypergrid-v7-snapshot.html)**
 
 ---
 
@@ -40,6 +41,8 @@ Deep multi-vendor PLC fluency across Mitsubishi, Beckhoff, Siemens, ABB (CoDeSys
 
 ---
 
+<div class="page-break"></div>
+
 ## Signature Projects
 
 | # | Project | Industry | What's distinct |
@@ -54,6 +57,8 @@ Deep multi-vendor PLC fluency across Mitsubishi, Beckhoff, Siemens, ABB (CoDeSys
 | 07 | [Atomsenses LoRaWAN](projects/07-atomsenses-lorawan.html) | Industrial hygiene | IN865 · payload decoding · transport-layer diagnosis |
 
 ---
+
+<div class="page-break"></div>
 
 ## Professional Experience
 

@@ -38,6 +38,8 @@ Deep multi-vendor PLC fluency across Mitsubishi, Beckhoff, Siemens, ABB (CoDeSys
 
 ---
 
+<div class="page-break"></div>
+
 ## Signature Projects
 
 ### HyperGrid Multi-Tenant IIoT Platform — Built & Scaled from 0 to Production
@@ -80,6 +82,8 @@ Turnkey multi-site IIoT rollout for Standard Glass delivered on the customer's o
 LoRaWAN deployment on IN865 band with air-quality (ES-204) and dual-probe T&H / toilet-gas (AS-109) sensors on an eLT Edge gateway. Diagnosed a gateway HTTP/1.0-vs-HTTPS transport mismatch that was silently dropping data, decoded proprietary sensor payloads, and stabilised the data flow into ChirpStack.
 
 ---
+
+<div class="page-break"></div>
 
 ## Professional Experience
 

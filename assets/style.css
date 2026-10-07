@@ -48,6 +48,17 @@ h1.title {
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 800;
+  text-align: left;        /* no more centered name over left-aligned body */
+}
+
+/* Explicit page-break class (used in markdown for forced page breaks in PDF) */
+.page-break {
+  page-break-before: always;
+  break-before: page;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 h1 {
   font-size: 26px;
@@ -142,10 +153,12 @@ blockquote {
 @page {
   size: A4;
   margin: 16mm 15mm;
+  background: white;
 }
 @media print {
-  body { background: white; font-size: 10.5pt; line-height: 1.4; }
-  body > * { max-width: none; padding: 0; margin: 0; }
+  html, body { background: white !important; }
+  body { font-size: 10.5pt; line-height: 1.4; }
+  body > * { max-width: none; padding: 0; margin: 0; background: transparent; }
 
   h1.title { font-size: 22pt; border-bottom-width: 1.5pt; margin-top: 0; margin-bottom: 6pt; }
   h1 { font-size: 16pt; border-bottom-width: 1pt; margin-top: 10pt; }
