@@ -4,8 +4,7 @@
 
 📍 Hyderabad, India · 📞 +91 6379916120 · ✉ [elayarasanram90@gmail.com](mailto:elayarasanram90@gmail.com) · 💻 [github.com/EA000123](https://github.com/EA000123)
 
-**📥 Download resume:** **[Word (.docx)](resume/resume.docx)** · **[PDF](resume/resume.pdf)** · **[HTML](resume/resume.html)**
-**🔗 Browse:** **[Project case studies](#signature-projects)** · **[Work log](worklog/2026-10-07-hypergrid-v7-snapshot.html)**
+**[📥 Download Resume (PDF)](resume/resume.pdf)** · **[Project case studies](#signature-projects)** · **[Work log](worklog/2026-10-07-hypergrid-v7-snapshot.html)**
 
 ---
 

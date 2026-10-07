@@ -40,13 +40,6 @@ convert_one() {
     --pdf-engine=weasyprint \
     -o "$out_dir/${base}.pdf"
 
-  # DOCX (Microsoft Word) — editable, uploadable to Naukri's resume-upload form
-  pandoc "$tmp" \
-    --from=gfm --to=docx \
-    --metadata=title:"$title" \
-    --metadata=lang:en \
-    -o "$out_dir/${base}.docx"
-
   rm -f "$tmp"
 }
 
